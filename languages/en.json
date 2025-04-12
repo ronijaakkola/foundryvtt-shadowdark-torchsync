@@ -1,0 +1,6 @@
+{
+  "TORCHSYNC.init_libwrapper_error": "TorchSync requires the 'libWrapper' module. Please install and enable it.",
+  "TORCHSYNC.light_config_legend": "TorchSync",
+  "TORCHSYNC.light_config_title": "Sync With Light Tracking",
+  "TORCHSYNC.light_config_description": "Lights with the sync enabled will follow Shadowdark's light tracking. Synced light will automatically go out if all light sources are extinguished."
+}
