@@ -1,6 +1,6 @@
 {
   "TORCHSYNC.init_libwrapper_error": "TorchSync vaatii 'libWrapper' lisäosan. Ole hyvä ja asenna se sekä kytke se päälle.",
   "TORCHSYNC.light_config_legend": "TorchSync",
-  "TORCHSYNC.light_config_title": "Synronoi valonseurannan kanssa",
+  "TORCHSYNC.light_config_title": "Synkronoi valonseurannan kanssa",
   "TORCHSYNC.light_config_description": "Valot, joissa synkronointi on käytössä, seuraavat Shadowdarkin valoseurantaa. Synkronoidut valot sammuvat automaattisesti, jos kaikki valonlähteet sammutetaan."
 }
