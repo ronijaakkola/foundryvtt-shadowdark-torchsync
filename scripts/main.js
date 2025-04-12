@@ -25,8 +25,6 @@ Hooks.on("renderAmbientLightConfig", async (obj, html) => {
     if (!game.user.isGM) return;
     if (!obj.isEditable) return;
 
-    console.log("TorchSync | renderAmbientLightConfig");
-
     if (!foundry.utils.hasProperty(obj.document, 'flags.torchsync-shadowdark.enabled')) {
         await obj.document.setFlag('torchsync-shadowdark', 'enabled', false);
     }
@@ -80,4 +78,8 @@ Hooks.on("updateAmbientLight", (doc, changes) => {
     if (isEnabled) {
         light.addChild(TorchSync.createTorchSyncIcon());
     }
+
+    // Update the ambient light state to match the light tracking state.
+    // At this point, we know that the light has the TorchSync flag enabled.
+    TorchSync.onAmbientLightConfigChange(light);
 });

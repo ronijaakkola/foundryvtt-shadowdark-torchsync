@@ -57,6 +57,17 @@ export class TorchSync {
     }
 
     /**
+     * Handles changes to the ambient light configuration.
+     * Toggles the visibility of the light source based on the current state.
+     *
+     * @param {AmbientLight} light - The ambient light object whose configuration has changed.
+     */
+    static onAmbientLightConfigChange(light) {
+        const currentState = this._checkActiveLightSources();
+        light.document.update({ hidden: !currentState });
+    }
+
+    /**
      * This method will be called after the scene is loaded.
      * It will check the current state of light sources and toggle visibility accordingly.
      */
