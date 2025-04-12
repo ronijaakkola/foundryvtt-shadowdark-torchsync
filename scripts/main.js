@@ -25,6 +25,8 @@ Hooks.on("renderAmbientLightConfig", async (obj, html) => {
     if (!game.user.isGM) return;
     if (!obj.isEditable) return;
 
+    console.log("TorchSync | renderAmbientLightConfig");
+
     if (!foundry.utils.hasProperty(obj.document, 'flags.torchsync-shadowdark.enabled')) {
         await obj.document.setFlag('torchsync-shadowdark', 'enabled', false);
     }
@@ -36,7 +38,7 @@ Hooks.on("renderAmbientLightConfig", async (obj, html) => {
 
     if ($(html).find('.ts-light-config').length === 0) {
         const target = html.querySelector('[data-application-part="advanced"]');
-        target.insertAdjacentHTML("beforebegin", injection);
+        target.insertAdjacentHTML("afterbegin", injection);
     }
 });
 
