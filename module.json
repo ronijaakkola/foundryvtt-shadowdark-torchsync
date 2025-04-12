@@ -1,7 +1,7 @@
 {
   "name": "torchsync-shadowdark",
   "title": "TorchSync Shadowdark",
-  "description": "Allows synchronization of scene lights with Shadowdark's light tracking system.",
+  "description": "TorchSync allows synchronization of scene lights with Shadowdark's light tracking system in FoundryVTT.",
   "version": "0.1",
   "author": "Roni Helppi",
   "esmodules": ["scripts/main.js"],

@@ -1,3 +1,3 @@
 # TorchSync
 
-TorchSync a FoundryVTT module designed to help manage torches and light sources in the Shadowdark RPG system.
+TorchSync allows synchronization of scene lights with Shadowdark's light tracking system in FoundryVTT.
