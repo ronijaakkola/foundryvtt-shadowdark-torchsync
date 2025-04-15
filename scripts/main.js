@@ -77,9 +77,8 @@ Hooks.on("updateAmbientLight", (doc, changes) => {
 
     if (isEnabled) {
         light.addChild(TorchSync.createTorchSyncIcon());
-    }
 
-    // Update the ambient light state to match the light tracking state.
-    // At this point, we know that the light has the TorchSync flag enabled.
-    TorchSync.onAmbientLightConfigChange(light);
+        // Update the ambient light state to match the light tracking state.
+        TorchSync.onAmbientLightConfigChange(light);
+    }
 });
